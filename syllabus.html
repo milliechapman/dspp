@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAS TPP: Big Data for Public Policy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: #f4f6fa;
+            margin: 0;
+            padding: 0;
+            color: #222b45;
+        }
+        .navbar {
+            background: #23395d;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            height: 60px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .navbar .logo {
+            color: #fff;
+            font-size: 1.3rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-right: 2rem;
+            text-decoration: none;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar li {
+            margin: 0 1rem;
+        }
+        .navbar a {
+            color: #e0e6f7;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+        .navbar a:hover,
+        .navbar a.active {
+            color: #ffb347;
+        }
+        .main-content {
+            max-width: 900px;
+            margin: 2.5rem auto 0 auto;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+            padding: 2.5rem 2rem 2rem 2rem;
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5em;
+            color: #23395d;
+        }
+        .subtitle {
+            color: #4a5a7a;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        .slot {
+            margin-bottom: 1.8rem;
+        }
+        .slot h2 {
+            margin: 0 0 0.55rem 0;
+            color: #23395d;
+            font-size: 1.16rem;
+        }
+        .slot p {
+            margin: 0.3rem 0;
+            color: #3a4666;
+            line-height: 1.55;
+        }
+        .slot ul {
+            margin: 0.45rem 0 0.3rem 1.2rem;
+            color: #23395d;
+            line-height: 1.55;
+        }
+        hr {
+            margin: 1.5rem 0;
+            border: none;
+            border-top: 1.5px solid #e0e6f7;
+        }
+        @media (max-width: 700px) {
+            .main-content {
+                padding: 1.2rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a class="logo" href="index.html" aria-label="Home"></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="syllabus.html" class="active">Syllabus</a></li>
+            <li><a href="readings.html">Readings</a></li>
+            <li><a href="tech.html">Tech Setup</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <h1>Syllabus</h1>
+        <div class="subtitle">Schedule</div>
+
+        <div class="slot">
+            <h2>09:00 - 09:30 | Welcome, Introductions, and Framing</h2>
+            <ul>
+                <li>Introductions</li>
+                <li>Short exercise: tracing the data behind a real policy decision</li>
+                <li>Framing discussion:</li>
+                <li>Policy problems are larger, interconnected, and often planetary in scale</li>
+                <li>Why traditional "download -> clean -> analyze" workflows break down</li>
+                <li>What it means to work with data in the wild</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="slot">
+            <h2>09:30 - 10:30 | Lecture 1: From Planetary Problems to Data Infrastructures</h2>
+            <p><b>Big data as infrastructure, not just scale</b></p>
+            <ul>
+                <li>The mismatch: planetary-scale problems vs local data workflows</li>
+                <li>Where data live: platforms, APIs, cloud systems</li>
+                <li>Why data are messy, incomplete, and unevenly distributed</li>
+                <li>Introduction to cloud-native thinking</li>
+                <li>Light overview: geospatial AI and foundation models (where they fit, not how they work)</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="slot">
+            <h2>10:30 - 10:45 | Break</h2>
+        </div>
+
+        <hr>
+
+        <div class="slot">
+            <h2>10:45 - 11:45 | Group Work 1: Framing Questions and Finding Data</h2>
+            <p><b>Focus: discovery, scale, and feasibility</b></p>
+            <ul>
+                <li>Form groups (assigned themes or self-proposed topics)</li>
+                <li>Define a policy question</li>
+                <li>Identify:</li>
+                <li>What data are needed</li>
+                <li>Where those data exist (platforms, repositories, APIs, catalogs)</li>
+                <li>Whether the scale of the data matches the scale of the problem</li>
+                <li>Begin identifying access constraints</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="slot">
+            <h2>11:45 - 12:00 | Regroup and Reflection</h2>
+            <ul>
+                <li>What data were easy to find?</li>
+                <li>What was missing or inaccessible?</li>
+                <li>Where do data gaps or disparities appear?</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="slot">
+            <h2>12:00 - 13:00 | Lunch</h2>
+        </div>
+
+        <hr>
+
+        <div class="slot">
+            <h2>13:00 - 14:00 | Lecture 2: Accessing Data Where They Live</h2>
+            <p><b>Cloud-native computing in practice</b></p>
+            <ul>
+                <li>Working with data you cannot download</li>
+                <li>Querying distributed datasets (APIs, cloud platforms)</li>
+                <li>Introduction to <a href="https://stacspec.org/en/about/" target="_blank">STAC catalogs</a> for geospatial data access</li>
+                <li>Simple workflows in R / VS Code</li>
+                <li>What is now easy vs still difficult in practice</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="slot">
+            <h2>14:00 - 15:00 | Group Work 2: Accessing and Working with Data</h2>
+            <p><b>Focus: implementation and friction</b></p>
+            <ul>
+                <li>Attempt to access identified datasets</li>
+                <li>Query data (e.g., APIs, STAC, platform-based systems)</li>
+                <li>Run simple transformations or summaries</li>
+                <li>Document:</li>
+                <li>What works smoothly</li>
+                <li>What breaks (technical, institutional, or access barriers)</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="slot">
+            <h2>15:00 - 15:15 | Break</h2>
+        </div>
+
+        <hr>
+
+        <div class="slot">
+            <h2>15:15 - 15:45 | Mini-Lecture: Data Disparities and Infrastructures</h2>
+            <ul>
+                <li>Uneven data landscapes: "data deserts" vs "data-rich" systems</li>
+                <li>Insights from Unicorns, Show Ponies, and Gazelles</li>
+                <li>How infrastructures shape access, knowledge, and power</li>
+                <li>Blind spots in global and regional policy due to missing data</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="slot">
+            <h2>15:45 - 16:30 | Group Work 3: Reflection and Reframing</h2>
+            <p><b>Focus: systems thinking and implications</b></p>
+            <ul>
+                <li>Refine project outputs (simple results or workflow sketches)</li>
+                <li>Reflect on:</li>
+                <li>How infrastructure shaped your analysis</li>
+                <li>What data were missing or inaccessible</li>
+                <li>What would need to change to answer your question well</li>
+                <li>Prepare short presentations</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="slot">
+            <h2>16:30 - 17:00 | Presentations and Closing Reflections</h2>
+            <ul>
+                <li>Group presentations (5 minutes each)</li>
+                <li>Discussion:</li>
+                <li>What was easy vs hard?</li>
+                <li>Where did scale create challenges?</li>
+                <li>How did data disparities shape your results?</li>
+                <li>Closing reflection: What does it mean to do policy in a world of planetary-scale, uneven, and infrastructure-dependent data?</li>
+            </ul>
+        </div>
+    </div>
+    <footer style="margin-top:2.5rem;background:#23395d;color:#e0e6f7;padding:1rem 2rem;text-align:center;font-size:0.95rem;">
+        CAS TPP: Big Data for Public Policy | ETH Zurich | May 8, 2026
+    </footer>
+</body>
+</html>
